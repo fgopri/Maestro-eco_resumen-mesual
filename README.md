@@ -1,6 +1,10 @@
+<p align="center">
+  <img src="banner.jpg" alt="Banner del proyecto" width="100%">
+</p>
+
 # Resumen mensual · Maestro Ecologist Extendido
 
-![Estado](https://github.com/USUARIO/REPO/actions/workflows/panel.yml/badge.svg)
+![Estado](https://github.com/fgopri/Maestro-eco_resumen-mesual/actions/workflows/panel.yml/badge.svg)
 
 Paneles mensuales generados automáticamente a partir de las observaciones
 del proyecto [Maestro Ecologist Extendido](https://www.inaturalist.org/projects/maestro-ecologist-extendido)
