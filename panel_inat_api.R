@@ -550,3 +550,9 @@ if (length(meses_vacios) > 0) {
           paste(meses_vacios, collapse = ", "))
 }
 message("========================================")
+
+# Copia del panel más reciente con nombre fijo (para mostrarlo en el README)
+ultimo <- tail(sort(list.files("figures",
+                               pattern = "^panel_inat_\\d{4}_\\d{2}\\.png$",
+                               full.names = TRUE)), 1)
+file.copy(ultimo, "figures/ultimo_panel.png", overwrite = TRUE)
