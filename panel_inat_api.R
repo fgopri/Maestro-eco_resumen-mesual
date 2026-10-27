@@ -14,7 +14,7 @@ ARCHIVO_CACHE <- "data/cache_inat.rds"  # caché local de observaciones
 FORZAR_DESCARGA_COMPLETA <- FALSE       # TRUE = ignora la caché y vuelve a bajar todo
                                         # (úsalo de vez en cuando: updated_since no detecta
                                         #  observaciones borradas o sacadas del proyecto)
-ULTIMOS_N_MESES <- 6                 # NULL = genera todos los meses; 2 = solo los 2 últimos
+ULTIMOS_N_MESES <- NULL                 # NULL = genera todos los meses; 2 = solo los 2 últimos
 
 
 # ── 1. PAQUETES ──────────────────────────────────────────────
