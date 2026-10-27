@@ -15,7 +15,7 @@ FORZAR_DESCARGA_COMPLETA <- FALSE       # TRUE = ignora la caché y vuelve a baj
                                         # (úsalo de vez en cuando: updated_since no detecta
                                         #  observaciones borradas o sacadas del proyecto)
 ULTIMOS_N_MESES <- NULL                 # NULL = genera todos los meses; 2 = solo los 2 últimos
-
+FECHA_INICIO <- as.Date("2025-01-01")  # pon aquí el mes en que empezó el proyecto
 
 # ── 1. PAQUETES ──────────────────────────────────────────────
 # install.packages(c("tidyverse", "lubridate", "patchwork", "sf",
@@ -160,6 +160,8 @@ lista_mes_anio <- tibble(
   mes   = month(secuencia_meses),
   anio  = year(secuencia_meses)
 )
+
+lista_mes_anio <- lista_mes_anio |> filter(fecha >= FECHA_INICIO)
 
 if (!is.null(ULTIMOS_N_MESES)) {
   lista_mes_anio <- tail(lista_mes_anio, ULTIMOS_N_MESES)
