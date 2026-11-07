@@ -2,7 +2,7 @@ name: Panel mensual iNaturalist
 
 on:
   schedule:
-    - cron: "41 17 7 * *"      # día 1 de cada mes, 7:00 UTC
+    - cron: "45 13 7 * *"      # día 1 de cada mes, 7:00 UTC
   workflow_dispatch:          # permite lanzarlo a mano con un botón
 
 permissions:
